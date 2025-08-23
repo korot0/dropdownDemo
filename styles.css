@@ -1,0 +1,30 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+#more-vert-btn {
+  cursor: pointer;
+}
+
+.more-vert-container {
+  border: 2px solid black;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.more-vert-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.more-vert-item:hover {
+  background: gray;
+  cursor: pointer;
+}
