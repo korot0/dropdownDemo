@@ -5,23 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dropdown Demo</title>
     <link rel="stylesheet" href="./styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=more_vert"
-    />
-    <script src="index.js" defer></script>
+    <script type="module" src="src/index.js" defer></script>
   </head>
   <body>
     <h1>Dropdown Demo</h1>
-    <button id="more-vert-btn" class="material-symbols-outlined">
-      more_vert
-    </button>
     <div class="dropdown-container">
-      <ul class="more-vert-ul">
-        <li class="more-vert-item">Edit</li>
-        <li class="more-vert-item">Copy</li>
-        <li class="more-vert-item">Delete</li>
-      </ul>
+      <button class="dropdown-btn material-symbols-outlined">more_vert</button>
+      <div class="dropdown" role="menu">
+        <ul class="dropdown-ul">
+          <li class="dropdown-item">Edit</li>
+          <li class="dropdown-item">Copy</li>
+          <li class="dropdown-item">Delete</li>
+        </ul>
+      </div>
+    </div>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores,
+      voluptates. Fugiat, veniam non in ut quis dignissimos ullam voluptates
+      corrupti quas earum, obcaecati assumenda? Optio consequatur cum inventore
+      pariatur deserunt.
+    </p>
+    <div class="dropdown-container">
+      <button class="dropdown-btn material-symbols-outlined">more_vert</button>
+      <div class="dropdown" role="menu">
+        <ul class="dropdown-ul">
+          <li class="dropdown-item">Setting 1</li>
+          <li class="dropdown-item">Setting 2</li>
+          <li class="dropdown-item">Setting 3</li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
