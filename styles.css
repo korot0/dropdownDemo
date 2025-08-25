@@ -8,25 +8,32 @@ h1 {
   text-align: center;
 }
 
-/* Dropdown container */
-.dropdown-container {
-  position: relative;
-}
-
 /* Three dots button */
 .dropdown-btn {
   cursor: pointer;
   border: none;
   width: auto;
-  background: inherit;
+  background: #ddd;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.dropdown-btn:hover {
+  background: #bbb;
 }
 
 /* Dropdown */
 .dropdown {
-  border: 2px solid black;
-  border-radius: 5px;
-  width: fit-content;
   position: absolute;
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 /* Remove default ul style */
@@ -36,9 +43,19 @@ h1 {
   padding: 0;
 }
 
-.dropdown-item:hover {
-  background: lightgray;
+.dropdown-item {
+  padding: 10px 20px;
   cursor: pointer;
+  transition: background 0.2s;
+  border-bottom: 1px solid #bbb;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background: #f0f0f0;
 }
 
 .hidden {
